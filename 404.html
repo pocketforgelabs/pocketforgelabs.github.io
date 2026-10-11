@@ -13,6 +13,10 @@
 <meta name="color-scheme" content="dark light">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/site.css">
+<script>
+  // Any capitalisation of /getriftvision lands on /getRiftVision/ (GitHub Pages paths are case-sensitive).
+  if (/^\/getriftvision\/?$/i.test(location.pathname)) location.replace('/getRiftVision/' + location.search);
+</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>

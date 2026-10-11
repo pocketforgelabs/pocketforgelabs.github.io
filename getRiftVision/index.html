@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Get Rift Vision · Pocket Forge</title>
+<meta name="description" content="Get Rift Vision, the Riftbound card scanner: Google Play on Android, the App Store on iPhone.">
+<link rel="canonical" href="https://pocketforgelabs.com/getRiftVision/">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css">
+<script>
+  // Phones go straight to their store; computers (and anything else) see both buttons below.
+  // When Rift Vision is live on the App Store, set IOS_LIVE to true.
+  (function () {
+    var PLAY = 'https://play.google.com/store/apps/details?id=com.ariftpull.riftvision';
+    var APPLE = 'https://apps.apple.com/app/id6816736826';
+    var IOS_LIVE = false;
+    var ua = navigator.userAgent || '';
+    var ios = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    if (/Android/i.test(ua)) location.replace(PLAY);
+    else if (ios && IOS_LIVE) location.replace(APPLE);
+  })();
+</script>
+</head>
+<body style="--accent:#C8AA6E">
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="/"><svg class="logo" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset=".55" stop-color="#6366F1"/><stop offset="1" stop-color="#A855F7"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#lg)"/><path d="M8.5 9.5h15v7.25a7.5 7.5 0 0 1-15 0z" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"/><path d="M8.5 13h15" stroke="#fff" stroke-opacity=".45" stroke-width="1.4" stroke-dasharray="1.6 1.8"/><path d="M12.4 17.2l2.6 2.6 4.8-5.2" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Pocket Forge</span></a>
+    <nav class="menu" aria-label="Main">
+      <a href="/#apps">Apps</a>
+      <a class="wide-only" href="/#approach">Approach</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="wrap" style="padding:64px 0 80px;text-align:center">
+    <img src="/assets/rift-vision/icon-256.png" alt="" width="96" height="96" style="border-radius:22px;display:block;margin:0 auto">
+    <h1 style="margin:20px 0 8px">Get Rift Vision</h1>
+    <p class="muted">Scan your Riftbound cards, see what they are worth, and keep your collection.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px">
+      <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.ariftpull.riftvision">Get it on Google Play</a>
+      <span class="btn" aria-disabled="true" title="Coming soon">App Store: coming soon</span>
+    </div>
+    <p class="muted small" style="margin-top:24px"><a href="/rift-vision/">More about Rift Vision</a></p>
+  </section>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p class="disclaimer">Rift Vision was created under Riot Games' &quot;Legal Jibber Jabber&quot; policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.</p>
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/"><svg class="logo" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset=".55" stop-color="#6366F1"/><stop offset="1" stop-color="#A855F7"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#lg)"/><path d="M8.5 9.5h15v7.25a7.5 7.5 0 0 1-15 0z" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"/><path d="M8.5 13h15" stroke="#fff" stroke-opacity=".45" stroke-width="1.4" stroke-dasharray="1.6 1.8"/><path d="M12.4 17.2l2.6 2.6 4.8-5.2" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Pocket Forge</span></a>
+        <p class="muted small">Small apps that solve real problems.</p>
+      </div>
+      <div>
+        <h4>Apps</h4>
+        <a href="/rift-vision/">Rift Vision</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="/rift-vision/support/">Rift Vision support</a>
+        <a href="/contact/">Contact us</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="/rift-vision/privacy/">Rift Vision privacy</a>
+        <a href="/rift-vision/riot-policy/">Riot Games policy</a>
+        <a href="/privacy/">Website privacy</a>
+      </div>
+    </div>
+    <p class="muted small copy">© 2026 Pocket Forge LLC. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
